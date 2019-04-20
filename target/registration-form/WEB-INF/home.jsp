@@ -16,15 +16,17 @@
 </head>
 <body>
 <div style="text-align:center">
-    <a href="login">Login</a> <a href="register">Register</a>
+    <a href="login">Login</a>
+    <a href="register">Register</a>
+    <a href="products/all">Products</a>
 </div>
 <h1>Hello ${nick}</h1>
-<ul>
-    <c:forEach var="product" items="${products}">
-        <c:if test="${product.category == 'trousers' }">
-            <li>${product.name}</li>
-        </c:if>
-    </c:forEach>
-</ul>
+<%--<ul>--%>
+    <%--<c:forEach var="product" items="${products}">--%>
+        <%--<c:if test="${product.category == 'trousers' }">--%>
+            <%--<li>${product.name}</li>--%>
+        <%--</c:if>--%>
+    <%--</c:forEach>--%>
+<%--</ul>--%>
 </body>
 </html>

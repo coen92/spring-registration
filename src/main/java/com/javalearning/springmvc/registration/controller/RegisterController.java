@@ -16,8 +16,12 @@ import org.springframework.web.bind.annotation.PostMapping;
 @Controller
 public class RegisterController {
 
+    private UserValidator userValidator;
+
     @Autowired
-    UserValidator userValidator;
+    public RegisterController(UserValidator userValidator) {
+        this.userValidator = userValidator;
+    }
 
     @InitBinder
     protected void initBinder(WebDataBinder binder) {
